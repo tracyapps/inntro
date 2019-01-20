@@ -1,10 +1,10 @@
-# Start
+# Inntro
 
-Starter theme for [tapps](http://tapps.design) to use (and I suppose others can use it too at some point).
+Landing/launch theme for [inntro](http://inntro.me).
 
 
-### What is start?
-The start is a blank WordPress theme fully equipped with ACF site options & page sections to make things easy.
+### What is this thing?
+Custom landing site theme for inntro, created with [tapps'](http://tapps.design) starter theme, creatively called [start](https://github.com/tracyapps/start). Start is a blank WordPress theme fully equipped with ACF site options & page sections to make things easy.
 
 ### What comes with start?
 start comes pre-baked with some cool things.The theme also includes:
