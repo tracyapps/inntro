@@ -1002,6 +1002,9 @@ footer.site-footer {
       line-height: 1; }
       .home section.homepage-hero .hero-content h1 span {
         font-weight: 700; }
+      @media (max-width: 600px) {
+        .home section.homepage-hero .hero-content h1 {
+          font-size: 5rem; } }
     .home section.homepage-hero .hero-content h2 {
       margin: 0;
       padding: 0;
@@ -1010,6 +1013,9 @@ footer.site-footer {
       line-height: 1; }
       .home section.homepage-hero .hero-content h2 span {
         font-weight: 700; }
+      @media (max-width: 600px) {
+        .home section.homepage-hero .hero-content h2 {
+          font-size: 2.5rem; } }
 
 header.article-header .byline {
   padding: 0 0 6rem 0; }
