@@ -142,7 +142,7 @@
 		@include tablet-down {
 
 			.mobile-menu-toggle {
-				display: block;
+			//	display: block;  // hiding for now
 			}
 
 			ul {

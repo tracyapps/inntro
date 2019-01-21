@@ -475,8 +475,6 @@ input[type="submit"] {
         .site-header .main-navigation ul li a {
           transition: all 300ms ease-in-out; }
     @media (max-width: 900px) {
-      .site-header .main-navigation .mobile-menu-toggle {
-        display: block; }
       .site-header .main-navigation ul {
         -ms-flex-direction: column;
         flex-direction: column;
