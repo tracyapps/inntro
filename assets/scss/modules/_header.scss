@@ -1,5 +1,115 @@
 .site-header {
 	background: $header-background-color;
+	min-height: 15vh;
+	transition: all 1500ms ease-in-out;
+	transform: rotate(-2.1deg) skew(-2.1deg);
+	padding-top: 8vh;
+	margin-top: -7vh;
+	margin-bottom: -3vh;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.28 );
+
+
+	.header-content {
+		transform: rotate(2.1deg);
+		transition: all 1500ms ease-in-out;
+	}
+
+	.site-logo {
+		margin: 0 auto;
+		transform: skew(2.1deg);
+		transition: all 1500ms ease-in-out;
+
+		svg#inntro {
+			height: 4rem;
+			width: auto;
+			margin: 2vh 0 2vh 3rem;
+		}
+	}
+
+	.inntro {
+		transition: all 200ms ease-in-out;
+		display: flex;
+		justify-content: flex-start;
+
+		svg {
+			transition: all 1500ms ease-in-out;
+		}
+	}
+
+	.anim-shape {
+		-webkit-transform-origin: 0x 150px;
+		-ms-transform-origin: 0x 150px;
+		transform-origin: 0x 150px;
+		-webkit-transform: scale(0.5, 1) translate(-120%, 0) skewX(25deg);
+		-ms-transform: scale(0.5, 1) translate(-120%, 0) skewX(25deg);
+		transform: scale(0.5, 1) translate(-120%, 0) skewX(25deg);
+		-webkit-animation: moving-panel 15s infinite;
+		animation: moving-panel 15s infinite;
+		animation-delay: 3s;
+		-webkit-animation-delay: 3s;
+	}
+
+	.colortext .anim-shape:nth-child(1) {
+		fill: $pink;
+	}
+
+	.colortext .anim-shape:nth-child(2) {
+		fill: $orange;
+	}
+
+	.colortext .anim-shape:nth-child(3) {
+		fill: $green;
+	}
+
+	.colortext .anim-shape:nth-child(4) {
+		fill: $yellow;
+	}
+
+	.colortext .anim-shape:nth-child(5) {
+		fill: $light-blue;
+	}
+
+	#inntro_logo_shadow {
+		.st0 {
+			transition: all 200ms ease-in-out;
+			fill: rgba( $blue-purple, 0.52 );
+		}
+	}
+
+	&.smaller {
+		transform: rotate(0deg) skew(0deg);
+		margin-top: -12vh;
+		background: rgba( $header-background-color, 0.8 );
+
+		.header-content {
+			transform: rotate(0deg);
+		}
+
+		.site-logo {
+			transform: rotate(0deg) skew(0deg);
+			margin-top: 2.5vh;
+			margin-bottom: -1.5vh;
+		}
+
+		.inntro {
+			svg {
+				transform: scale(0.9);
+			}
+		}
+
+		#inntro_logo_shadow {
+			.st0 {
+				//transition: all 200ms ease-in-out;
+				fill: rgba( $blue-purple, 0.2 );
+				//stroke: rgba( $white, 0.95 );
+			}
+		}
+	}
 
 	.main-navigation {
 
@@ -76,22 +186,8 @@
 		}
 	}
 
-	&.smaller {
-
-	}
-
-}
-.site-logo {
-
-
 }
 
-.smaller {
-	.site-logo {
-
-	}
-
-}
 
 @include tablet-up {
 	.home {

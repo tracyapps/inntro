@@ -29,12 +29,12 @@
 // Style mixins
 
 @mixin button-primary(
-		$color: $button-background-color,
-		$text: $button-text-color,
-		$color-hover: $button-background-color-hover,
-		$text-hover: $button-text-color-hover,
-		$transition-speed: $button-transition-speed,
-		$padding: $default-button-padding ) {
+	$color: $button-background-color,
+	$text: $button-text-color,
+	$color-hover: $button-background-color-hover,
+	$text-hover: $button-text-color-hover,
+	$transition-speed: $button-transition-speed,
+	$padding: $default-button-padding ) {
 	background: transparentize( $color, 0.1 );
 	padding: $padding;
 	text-align: center;
@@ -51,15 +51,15 @@
 	&:focus,
 	&:visited:hover {
 		background: $color-hover;
-		color: $text-hover !important;;
+		color: $text-hover !important;
 	}
 }
 
 
 @mixin inverse-colors(
-		$text: $inverse-text-color,
-		$link: $inverse-link-color,
-		$link-hover: $inverse-link-color-hover ) {
+	$text: $inverse-text-color,
+	$link: $inverse-link-color,
+	$link-hover: $inverse-link-color-hover ) {
 	color: $text;
 	a,
 	a:visited {
@@ -87,6 +87,11 @@
 @mixin default-colors {
 	@include inverse-colors( $default-text-color, $default-link-color, $default-link-color-hover );
 	text-shadow: none;
+}
+
+// svg drop shadow
+@mixin svg-shadow {
+	filter: drop-shadow(0 1px 0 rgba( darken( $dark, 30 ), 0.75) ) url(#inset-shadow);
 }
 
 // Responsive mixins
@@ -132,46 +137,90 @@
 // Gradients
 // from https://webgradients.com
 
-@mixin plum-gradient {
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+@mixin pink-blue {
+	background-image: linear-gradient(-20deg, $pink 0%, $blue 100%);
 }
 
-@mixin grey-purple-gradient {
-	background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+@mixin purple-blue {
+	background-image: linear-gradient(135deg, $purple 0%, $medium-blue 100%);
 }
 
-@mixin dark-aqua-gradient {
-	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+@mixin purple-blue-overlay {
+	background-image: linear-gradient(135deg, rgba( $purple, 0.5 ) 0%, rgba( $medium-blue, 0.5 ) 100%);
 }
 
-@mixin dark-blue-gradient {
-	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+@mixin red-yellow {
+	background-image: linear-gradient(135deg, $red 0%, $yellow 100%);
 }
 
-@mixin medium-blue-gradient {
-	background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+@mixin purple-pink {
+	background-image: linear-gradient(135deg, $purple 0%, $pink 100%);
 }
 
-@mixin light-blue-gradient {
-	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+@mixin green-yellow {
+	background-image: linear-gradient(135deg, $green 0%, $lime 100%);
 }
 
-@mixin green-gradient {
-	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+@mixin blue-teal {
+	background-image: linear-gradient(135deg, $blue 0%, $blue 100%);
 }
 
-@mixin orange-gradient {
-	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+@mixin orange-yellow {
+	background-image: linear-gradient(135deg, $orange 0%, $yellow-alt 100%);
 }
 
-@mixin sunset-gradient {
-	background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+@mixin green-blue {
+	background-image: linear-gradient(180deg, $green 0%, $blue 100%);
 }
+
 
 @mixin light-grey-gradient {
 	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
-
+@mixin dark-gradient {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
 
 // ---------------- 03. Keyframes
+@-webkit-keyframes moving-panel {
+	20% {
+		-webkit-transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+		transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+	}
+	100% {
+		-webkit-transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+		transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+	}
+}
 
+@keyframes moving-panel {
+	20% {
+		-webkit-transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+		transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+	}
+	100% {
+		-webkit-transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+		transform: scale(1, 1) translate(120%, 0) skewX(-29deg);
+	}
+}
+
+
+@keyframes
+imageAnimation {  0% {
+	animation-timing-function: ease-in;
+	opacity: 0;
+}
+	7% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+	}
+	44% {
+		opacity: 1
+	}
+	50% {
+		opacity: 0
+	}
+	100% {
+		opacity: 0
+	}
+}
