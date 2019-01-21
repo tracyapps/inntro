@@ -993,19 +993,21 @@ footer.site-footer {
       .home section.homepage-hero .hero-content {
         width: 65%;
         max-width: 800px;
-        padding: 5vh 30% 5vh 0; } }
+        padding: 5vh 19% 5vh 0; } }
     .home section.homepage-hero .hero-content h1 {
       margin: 0;
       padding: 0;
       font-size: 7rem;
-      font-weight: 100; }
+      font-weight: 100;
+      line-height: 1; }
       .home section.homepage-hero .hero-content h1 span {
         font-weight: 700; }
     .home section.homepage-hero .hero-content h2 {
       margin: 0;
       padding: 0;
       font-size: 4rem;
-      font-weight: 300; }
+      font-weight: 300;
+      line-height: 1; }
       .home section.homepage-hero .hero-content h2 span {
         font-weight: 700; }
 
