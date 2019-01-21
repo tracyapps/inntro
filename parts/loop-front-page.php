@@ -32,8 +32,7 @@
 				<div class="crossfade slideshow-container">
 					<?php
 					$all_slides = get_sub_field( 'all_slides' );
-					//print_r( $all_slides );
-					$delay = 0;
+					$delay = 1;
 					foreach( $all_slides as $slide ) :
 						printf(
 							'<figure style="background-image: url(%s); animation-delay: %ss;"></figure>',

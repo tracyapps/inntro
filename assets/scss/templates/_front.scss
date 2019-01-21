@@ -30,7 +30,7 @@
 			z-index: -1;
 
 			> figure {
-				animation: imageAnimation 30s linear infinite 0s;
+				animation: imageAnimation 36s linear infinite 0s;
 				backface-visibility: hidden;
 				background-size: cover;
 				background-position: center center;
@@ -78,11 +78,11 @@
 				margin: 0;
 				padding: 0;
 				font-size: 4rem;
-				font-weight: 300;
+				font-weight: 700;
 				line-height: 1;
 
 				span {
-					font-weight: 700;
+					font-style: italic;
 				}
 
 				@include phone-only {

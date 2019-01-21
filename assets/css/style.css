@@ -41,7 +41,8 @@ CSS file.
   44% {
     opacity: 1; }
   50% {
-    opacity: 0; }
+    opacity: 0;
+    animation-timing-function: ease-in; }
   100% {
     opacity: 0; } }
 
@@ -968,7 +969,7 @@ footer.site-footer {
     height: 100%;
     z-index: -1; }
     .home section.homepage-hero .slideshow-container > figure {
-      animation: imageAnimation 30s linear infinite 0s;
+      animation: imageAnimation 36s linear infinite 0s;
       backface-visibility: hidden;
       background-size: cover;
       background-position: center center;
@@ -1007,10 +1008,10 @@ footer.site-footer {
       margin: 0;
       padding: 0;
       font-size: 4rem;
-      font-weight: 300;
+      font-weight: 700;
       line-height: 1; }
       .home section.homepage-hero .hero-content h2 span {
-        font-weight: 700; }
+        font-style: italic; }
       @media (max-width: 600px) {
         .home section.homepage-hero .hero-content h2 {
           font-size: 2.5rem; } }
