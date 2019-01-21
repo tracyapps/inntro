@@ -100,15 +100,33 @@ blockquote {
 .button,
 input[type="submit"],
 button {
-	@include button-primary;
-	text-shadow: none;
-	font-weight: bold;
-	border: none;
-	outline: none;
+	@include button-primary(transparent, $default-link-color, transparent, $default-link-color-hover, $button-transition-speed, $default-button-padding);
+	box-shadow: none;
 
 	&.full {
 		display: block;
 		text-align: center;
+	}
+
+	&.primary {
+		@include button-primary;
+		@include gradient-animate;
+		background-size: 200% 200%;
+		background-position: 0% 50%;
+		//transition: all $button-transition-speed ease-in-out;
+
+		&:hover {
+			@include gradient-animate;
+			background-size: 200% 200%;
+			background-position: 100% 50%;
+			transition: all $button-transition-speed ease-in-out;
+		}
+	}
+
+	&.secondary {
+		@include button-primary( transparent, $yellow, rgba( $purple, 0.52 ), $yellow-alt, $button-transition-speed, $default-button-padding);
+		font-size: 75%;
+		box-shadow: none;
 	}
 
 }

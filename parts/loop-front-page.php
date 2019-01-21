@@ -32,14 +32,14 @@
 				<div class="crossfade slideshow-container">
 					<?php
 					$all_slides = get_sub_field( 'all_slides' );
-					$delay = 1;
+					$delay = 0;
 					foreach( $all_slides as $slide ) :
 						printf(
 							'<figure style="background-image: url(%s); animation-delay: %ss;"></figure>',
 							esc_url( $slide[slide] ),
 							$delay
 						);
-						$delay += 6;
+						$delay += 8;
 					endforeach;
 					?>
 				</div>
@@ -60,10 +60,18 @@
 				echo '<div class="hero-text-body">' . get_field( 'hero_text_paragraph' ) . '</div>';
 			endif;
 
-			$cta_button = get_field( 'hero_button' );
+			$cta_buttons = get_field( 'cta' );
 
-			if ( $cta_button[button_text] != '' ) :
-				echo '<p class="centered-text"><a href="' . esc_url( $cta_button[button_link] ) . '" class="button">' . esc_html( $cta_button[button_text] ) . '</a></p>';
+			if ( $cta_buttons[primary_cta_button_text] && $cta_buttons[secondary_cta_button_text] != '' ) :
+				echo '<p class="cta_button_group">';
+
+					if ( $cta_buttons[secondary_cta_button_text] != '' ) {
+						echo '<a href="' . esc_url( $cta_buttons[secondary_cta_button_link] ) . '" class="cta button secondary">' . esc_html( $cta_buttons[secondary_cta_button_text] ) . '</a>';
+					}
+					if ( $cta_buttons[primary_cta_button_text] != '' ) {
+						echo '<a href="' . esc_url( $cta_buttons[primary_cta_button_link] ) . '" class="cta button primary">' . esc_html( $cta_buttons[primary_cta_button_text] ) . '</a>';
+					}
+				echo '</p>';
 			endif;
 			?>
 

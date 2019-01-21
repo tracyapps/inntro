@@ -35,6 +35,7 @@ $purple: 	#6727cb;
 $primary-color:            	$purple;
 $primary-color-text:		$white;
 $secondary-color:          	$pink;
+
 $default-background-color: 	$dark;
 $default-text-color:       	$offwhite;
 $default-link-color:       	$medium-blue;
@@ -49,16 +50,18 @@ $footer-text-color:			$offwhite;
 $footer-link-color:			$medium-blue;
 $footer-link-color-hover: 	$offwhite;
 
-$accent-color: $red;
+$accent-color:				$light-blue;
+$accent-color2:				$yellow;
+
 
 // Define elements
 
 // Primary / Default button:
-$button-background-color:       $primary-color;
-$button-background-color-hover: transparent;
+$button-background-color:       $accent-color;
+$button-background-color-hover: $accent-color2;
 $button-text-color:             $white;
 $button-text-color-hover:       $white;
-$default-button-padding:        1rem 2rem;
+$default-button-padding:        0.65rem 1.82rem;
 
 // Tabs
 $tabs-bg-color: 		$white;
@@ -134,8 +137,8 @@ $h6-font-size: $base-font-size * 1.1;
 
 // ---------------- 04. Decorative details
 
-$border-radius: 4px;
-$button-transition-speed: 300ms;
+$border-radius: 3px;
+$button-transition-speed: 200ms;
 
 
 // ---------------- 05. Form layout options

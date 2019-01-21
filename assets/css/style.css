@@ -46,6 +46,14 @@ CSS file.
   100% {
     opacity: 0; } }
 
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 * {
   box-sizing: border-box; }
 
@@ -117,21 +125,21 @@ blockquote {
 .button,
 input[type="submit"],
 button {
-  background: rgba(103, 39, 203, 0.9);
-  padding: 1rem 2rem;
+  background: transparent;
+  padding: 0.65rem 1.82rem;
   text-align: center;
   text-decoration: none;
-  color: #fff !important;
-  border-radius: 4px;
+  color: #38BBF9 !important;
+  border-radius: 3px;
   display: inline-block;
-  border: 1px solid #3c1775;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.43);
-  box-shadow: 0 0 3px rgba(103, 39, 203, 0.5);
-  transition: all 300ms ease-in-out;
-  text-shadow: none;
-  font-weight: bold;
-  border: none;
-  outline: none; }
+  border-top: 1px solid rgba(26, 26, 26, 0);
+  border-left: 1px solid rgba(26, 26, 26, 0);
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 3px rgba(42, 38, 58, 0.5);
+  transition: all 200ms ease-in-out;
+  box-shadow: none; }
   .button:hover, .button:focus, .button:visited:hover,
   input[type="submit"]:hover,
   input[type="submit"]:focus,
@@ -140,12 +148,78 @@ button {
   button:focus,
   button:visited:hover {
     background: transparent;
-    color: #fff !important; }
+    color: #CB1F8F !important; }
   .button.full,
   input[type="submit"].full,
   button.full {
     display: block;
     text-align: center; }
+  .button.primary,
+  input[type="submit"].primary,
+  button.primary {
+    background: rgba(0, 200, 255, 0.9);
+    padding: 0.65rem 1.82rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff !important;
+    border-radius: 3px;
+    display: inline-block;
+    border-top: 1px solid #33d3ff;
+    border-left: 1px solid #33d3ff;
+    border-bottom: 1px solid #00a0cc;
+    border-right: 1px solid #00a0cc;
+    text-shadow: 1px 1px 0 rgba(255, 55, 0, 0.23);
+    box-shadow: 0 1px 3px rgba(42, 38, 58, 0.5);
+    transition: all 200ms ease-in-out;
+    background: #20FFA3;
+    background: linear-gradient(135deg, #20FFA3 0%, #00c8ff 45%, #38BBF9 50%, #6727cb 100%);
+    background-size: 200% 200%;
+    background-position: 0% 50%; }
+    .button.primary:hover, .button.primary:focus, .button.primary:visited:hover,
+    input[type="submit"].primary:hover,
+    input[type="submit"].primary:focus,
+    input[type="submit"].primary:visited:hover,
+    button.primary:hover,
+    button.primary:focus,
+    button.primary:visited:hover {
+      background: #F9CE34;
+      color: #fff !important; }
+    .button.primary:hover,
+    input[type="submit"].primary:hover,
+    button.primary:hover {
+      background: #20FFA3;
+      background: linear-gradient(135deg, #20FFA3 0%, #00c8ff 45%, #38BBF9 50%, #6727cb 100%);
+      background-size: 200% 200%;
+      background-position: 100% 50%;
+      transition: all 200ms ease-in-out; }
+  .button.secondary,
+  input[type="submit"].secondary,
+  button.secondary {
+    background: transparent;
+    padding: 0.65rem 1.82rem;
+    text-align: center;
+    text-decoration: none;
+    color: #F9CE34 !important;
+    border-radius: 3px;
+    display: inline-block;
+    border-top: 1px solid rgba(26, 26, 26, 0);
+    border-left: 1px solid rgba(26, 26, 26, 0);
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 3px rgba(42, 38, 58, 0.5);
+    transition: all 200ms ease-in-out;
+    font-size: 75%;
+    box-shadow: none; }
+    .button.secondary:hover, .button.secondary:focus, .button.secondary:visited:hover,
+    input[type="submit"].secondary:hover,
+    input[type="submit"].secondary:focus,
+    input[type="submit"].secondary:visited:hover,
+    button.secondary:hover,
+    button.secondary:focus,
+    button.secondary:visited:hover {
+      background: rgba(103, 39, 203, 0.52);
+      color: #FFFA04 !important; }
 
 .learn-more-button {
   padding-bottom: 2rem; }
@@ -442,7 +516,7 @@ input[type="submit"] {
     fill: #00c8ff; }
   .site-header #inntro_logo_shadow .st0 {
     transition: all 200ms ease-in-out;
-    fill: rgba(122, 124, 189, 0.52); }
+    fill: rgba(255, 255, 255, 0.8); }
   .site-header.smaller {
     transform: rotate(0deg) skew(0deg);
     margin-top: -12vh;
@@ -468,13 +542,13 @@ input[type="submit"] {
       display: flex;
       -ms-flex-align: center;
       align-items: center;
-      transition: all 300ms ease-in-out; }
+      transition: all 200ms ease-in-out; }
       .site-header .main-navigation ul li {
         list-style-type: none;
         -ms-flex: 1;
         flex: 1; }
         .site-header .main-navigation ul li a {
-          transition: all 300ms ease-in-out; }
+          transition: all 200ms ease-in-out; }
     @media (max-width: 900px) {
       .site-header .main-navigation ul {
         -ms-flex-direction: column;
@@ -944,12 +1018,15 @@ footer.site-footer {
 
 .home section.homepage-hero {
   min-height: 70vh;
-  background-image: linear-gradient(135deg, rgba(103, 39, 203, 0.5) 0%, rgba(56, 187, 249, 0.5) 100%);
   padding: 19vh 2vw 5vh 2vw;
   margin-top: -1vh;
   background-size: cover;
   background-position: center center;
-  position: relative; }
+  position: relative;
+  background: rgba(103, 39, 203, 0.5);
+  background: linear-gradient(135deg, rgba(103, 39, 203, 0.5) 0%, rgba(56, 187, 249, 0.5) 50%, rgba(203, 31, 143, 0.5) 100%);
+  background-size: 400% 400%;
+  animation: Gradient 19s ease infinite; }
   .home section.homepage-hero .video-container {
     position: absolute;
     top: 0;
@@ -1015,6 +1092,17 @@ footer.site-footer {
       @media (max-width: 600px) {
         .home section.homepage-hero .hero-content h2 {
           font-size: 2.5rem; } }
+    .home section.homepage-hero .hero-content .cta_button_group {
+      margin-top: 5vh;
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: baseline;
+      align-items: baseline; }
+      .home section.homepage-hero .hero-content .cta_button_group a + a {
+        margin-left: 2rem; }
 
 header.article-header .byline {
   padding: 0 0 6rem 0; }
