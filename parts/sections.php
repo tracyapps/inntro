@@ -22,9 +22,14 @@ if ( have_rows( 'page_section' ) ):
 		$section_classes[] = esc_html( get_sub_field( 'section_background' ) );
 
 		$display_title_toggle = get_sub_field( 'display_title' );
+
+		$section_id = '';
+		if( get_sub_field( 'section_anchor_id' ) ) {
+			$section_id = sanitize_html_class( get_sub_field( 'section_anchor_id' ) );
+		}
 		?>
 
-		<section class="page-section <?php echo implode( ' ', $section_classes ); ?>">
+		<section class="page-section <?php echo implode( ' ', $section_classes ); ?>" id="<?php echo $section_id ?>">
 			<?php
 			$section_title = ( ( $display_title_toggle == '1' ) ? '<h2 class="section-title">' . get_sub_field( 'section_title' ) . '</h2>' : '' );
 			echo $section_title;
