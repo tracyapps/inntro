@@ -8,7 +8,7 @@
 		$hero_background = ' style="background-image: linear-gradient(-60deg, rgba( 0, 213, 251, 0.85 ) 0%, rgba( 7, 26, 51, 0.85 ) 100%), url(' . esc_url( get_field( 'hero_background_image' ) ) . ')" ';
 	endif;
 	?>
-	<section class="homepage-hero" <?php echo __( $hero_background ); ?>>
+	<section class="homepage-hero" id="top" <?php echo __( $hero_background ); ?>>
 
 		<?php if ( $hero_background_choice == 'video' ) : ?>
 			<div class="video-container">

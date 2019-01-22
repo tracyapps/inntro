@@ -2,7 +2,7 @@
 // Register menus
 register_nav_menus(
 	array(
-		'main-nav' => __( 'The Main Menu', 'start' ),
+		'main-nav' => __( 'The Top Nav: home', 'start' ),
 		// Main nav in header
 		'footer-links' => __( 'Footer Links', 'start' )
 		// Secondary nav in footer
