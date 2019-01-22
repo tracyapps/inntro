@@ -17,10 +17,12 @@
 	.header-content {
 		transform: rotate(2.1deg);
 		transition: all 1500ms ease-in-out;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.site-logo {
-		margin: 0 auto;
+		margin: 0;
 		transform: skew(2.1deg);
 		transition: all 1500ms ease-in-out;
 
@@ -109,11 +111,17 @@
 				//stroke: rgba( $white, 0.95 );
 			}
 		}
+
+		.main-navigation {
+			ul {
+				margin-top: 3.95vh;
+				margin-bottom: -1vh;
+			}
+		}
 	}
 
 	.main-navigation {
-
-		text-transform: uppercase;
+		flex: 1;
 
 		.mobile-menu-toggle {
 			display: none;
@@ -124,15 +132,23 @@
 			padding: 0.6em 1em;
 			display: flex;
 			align-items: center;
-			transition: all $button-transition-speed ease-in-out;
-
+			justify-content: flex-end;
+			transition: all 1500ms ease-in-out;
 
 			li {
 				list-style-type: none;
-				flex: 1;
+				padding: 0.25rem 1.5rem;
+				font-size: 90%;
 
 				a {
+					color: rgba( $white, 0.5 );
+					text-decoration: none;
+					display: block;
 					transition: all $button-transition-speed ease-in-out;
+
+					&:hover {
+						color: $lime;
+					}
 				}
 
 			}
