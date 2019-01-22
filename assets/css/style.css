@@ -540,7 +540,46 @@ input[type="submit"] {
       margin-bottom: -1vh; }
   .site-header .main-navigation {
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    /*@include tablet-down {
+
+			.mobile-menu-toggle {
+			//	display: block;  // hiding for now
+			}
+
+			ul {
+				flex-direction: column;
+				height: 0;
+				margin: 0;
+				padding: 0;
+				position: relative;
+				z-index: 9999;
+				display: flex;
+				overflow: hidden;
+
+
+				li {
+					width: 100%;
+
+					a {
+						line-height: 3;
+					}
+
+				}
+
+				&.open {
+					width: 100%;
+					max-width: 100vw;
+					display: flex;
+					height: calc( 100vh - 6rem );
+
+					li {
+						flex: 1;
+					}
+				}
+			}
+
+		}*/ }
     .site-header .main-navigation .mobile-menu-toggle {
       display: none; }
     .site-header .main-navigation ul {
@@ -564,31 +603,6 @@ input[type="submit"] {
           transition: all 200ms ease-in-out; }
           .site-header .main-navigation ul li a:hover {
             color: #CBF523; }
-    @media (max-width: 900px) {
-      .site-header .main-navigation ul {
-        -ms-flex-direction: column;
-        flex-direction: column;
-        height: 0;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        z-index: 9999;
-        display: -ms-flexbox;
-        display: flex;
-        overflow: hidden; }
-        .site-header .main-navigation ul li {
-          width: 100%; }
-          .site-header .main-navigation ul li a {
-            line-height: 3; }
-        .site-header .main-navigation ul.open {
-          width: 100%;
-          max-width: 100vw;
-          display: -ms-flexbox;
-          display: flex;
-          height: calc( 100vh - 6rem); }
-          .site-header .main-navigation ul.open li {
-            -ms-flex: 1;
-            flex: 1; } }
 
 @media (min-width: 900px) {
   .home .site-header .main-navigation ul {
@@ -1032,7 +1046,7 @@ footer.site-footer {
         transform: scale(1.1); }
 
 .home section.homepage-hero {
-  min-height: 100vh;
+  min-height: 101vh;
   padding: 19vh 2vw 5vh 2vw;
   margin-top: -1vh;
   background-size: cover;
