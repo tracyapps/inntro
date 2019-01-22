@@ -174,7 +174,8 @@ button {
     background: #20FFA3;
     background: linear-gradient(135deg, #20FFA3 0%, #00c8ff 45%, #38BBF9 50%, #6727cb 100%);
     background-size: 200% 200%;
-    background-position: 0% 50%; }
+    background-position: 0% 50%;
+    transition-duration: 350ms; }
     .button.primary:hover, .button.primary:focus, .button.primary:visited:hover,
     input[type="submit"].primary:hover,
     input[type="submit"].primary:focus,
@@ -190,8 +191,7 @@ button {
       background: #20FFA3;
       background: linear-gradient(135deg, #20FFA3 0%, #00c8ff 45%, #38BBF9 50%, #6727cb 100%);
       background-size: 200% 200%;
-      background-position: 100% 50%;
-      transition: all 200ms ease-in-out; }
+      background-position: 100% 50%; }
   .button.secondary,
   input[type="submit"].secondary,
   button.secondary {

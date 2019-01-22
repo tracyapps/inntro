@@ -113,13 +113,12 @@ button {
 		@include gradient-animate;
 		background-size: 200% 200%;
 		background-position: 0% 50%;
-		//transition: all $button-transition-speed ease-in-out;
+		transition-duration: 350ms;
 
 		&:hover {
 			@include gradient-animate;
 			background-size: 200% 200%;
 			background-position: 100% 50%;
-			transition: all $button-transition-speed ease-in-out;
 		}
 	}
 
