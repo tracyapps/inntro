@@ -66,10 +66,12 @@
 				echo '<p class="cta_button_group">';
 
 					if ( $cta_buttons[secondary_cta_button_text] != '' ) {
-						echo '<a href="' . esc_url( $cta_buttons[secondary_cta_button_link] ) . '" class="cta button secondary">' . esc_html( $cta_buttons[secondary_cta_button_text] ) . '</a>';
+						$secondary_button_link = ( $cta_buttons[secondary_link] == 'anotherpage' ? $cta_buttons[secondary_page_link] : '#' . $cta_buttons[secondary_anchor_link] );
+						echo '<a href="' . esc_url( $secondary_button_link ) . '" class="cta button secondary">' . esc_html( $cta_buttons[secondary_cta_button_text] ) . '</a>';
 					}
 					if ( $cta_buttons[primary_cta_button_text] != '' ) {
-						echo '<a href="' . esc_url( $cta_buttons[primary_cta_button_link] ) . '" class="cta button primary">' . esc_html( $cta_buttons[primary_cta_button_text] ) . '</a>';
+						$primary_button_link = ( $cta_buttons[primary_link] == 'anotherpage' ? $cta_buttons[primary_page_link] : '#' . $cta_buttons[primary_anchor_link] );
+						echo '<a href="' . esc_url( $primary_button_link ) . '" class="cta button primary">' . esc_html( $cta_buttons[primary_cta_button_text] ) . '</a>';
 					}
 				echo '</p>';
 			endif;
