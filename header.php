@@ -37,7 +37,7 @@
 
 			<h1 class="screen-reader-text"><?php echo get_bloginfo( 'name' ); ?></h1>
 			<div class="logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/#top' ) ); ?>">
 					<?php get_template_part( 'parts/include-logo' ); ?>
 				</a>
 			</div>
