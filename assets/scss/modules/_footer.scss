@@ -1,8 +1,11 @@
 
 footer.site-footer {
-	background: $footer-background-color;
-	padding: 2rem 0;
+	@include dark-gradient;
+	margin: -3rem 0;
+	padding: 3rem 0;
 	color: $footer-text-color;
+	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 
 	a {
 		color: $footer-link-color;

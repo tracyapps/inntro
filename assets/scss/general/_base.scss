@@ -222,3 +222,27 @@ h6 {
 	background: $default-background-color;
 	@include default-colors;
 }
+
+.white {
+	background: $white;
+	color: $dark;
+}
+
+.purple-blue {
+	@include purple-blue;
+}
+.purple-pink {
+	@include purple-pink;
+}
+.red-yellow {
+	@include red-yellow;
+}
+.green-yellow {
+	@include green-yellow;
+}
+.blue-teal {
+	@include blue-teal;
+}
+.orange-yellow {
+	@include orange-yellow;
+}

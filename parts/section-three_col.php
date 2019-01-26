@@ -23,7 +23,7 @@ $columns = 3;
 		if( $col_background_select == 'pattern' ) :
 			$col_background_class = get_sub_field( 'column_' . $col . '_background_pattern' );
 		elseif( $col_background_select == 'image' ) :
-			$col_background_image = ' style="background-image: url(' . esc_url( get_sub_field( 'column_' . $col . '_background_image' ) ) . '); background-size: contain; background-repeat: no-repeat; background-position: right;" ';
+			$col_background_image = ' style="background-image: url(' . esc_url( get_sub_field( 'column_' . $col . '_background_image' ) ) . '); background-size: cover; background-repeat: no-repeat; background-position: center;" ';
 		else :
 			$col_background_class = 'plain-bg';
 		endif;
