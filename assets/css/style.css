@@ -332,26 +332,26 @@ h6 {
       font-size: calc( 19.8px / 1.3); } }
 
 .plain-bg {
-  background: #2a263a;
-  color: #F2F2F2;
-  text-shadow: 1px 1px 0 rgba(13, 13, 13, 0.43); }
+  background: #fff;
+  color: #2a263a;
+  text-shadow: 1px 1px 0 rgba(213, 217, 197, 0.43); }
   .plain-bg a,
   .plain-bg a:visited {
-    color: #00c8ff;
+    color: #6727cb;
     font-weight: 300;
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
-    -webkit-text-decoration-color: rgba(0, 200, 255, 0.6);
-    text-decoration-color: rgba(0, 200, 255, 0.6); }
+    -webkit-text-decoration-color: rgba(103, 39, 203, 0.6);
+    text-decoration-color: rgba(103, 39, 203, 0.6); }
     .plain-bg a:hover, .plain-bg a:focus, .plain-bg a:active,
     .plain-bg a:visited:hover,
     .plain-bg a:visited:focus,
     .plain-bg a:visited:active {
-      color: #FFFA04;
-      -webkit-text-decoration-color: rgba(0, 200, 255, 0);
-      text-decoration-color: rgba(0, 200, 255, 0); }
+      color: #4a4951;
+      -webkit-text-decoration-color: rgba(103, 39, 203, 0);
+      text-decoration-color: rgba(103, 39, 203, 0); }
   .plain-bg svg {
-    fill: #F2F2F2 !important; }
+    fill: #2a263a !important; }
 
 .white {
   background: #fff;
