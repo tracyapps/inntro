@@ -58,20 +58,23 @@
 	}
 }
 
-
-@mixin inverse-colors(
-	$text: $inverse-text-color,
-	$link: $inverse-link-color,
-	$link-hover: $inverse-link-color-hover ) {
+@mixin text-colors(
+	$text: $default-text-color,
+	$link: $default-link-color,
+	$link-hover: $default-link-color-hover ) {
 	color: $text;
 	a,
 	a:visited {
 		color: $link;
+		font-weight: 300;
+		text-decoration-line: underline;
+		text-decoration-color: rgba( $link, 0.6 );
 
 		&:hover,
 		&:focus,
 		&:active {
 			color: $link-hover;
+			text-decoration-color: rgba( $link, 0 );
 		}
 
 		&.button {
@@ -87,8 +90,12 @@
 
 }
 
+@mixin inverse-colors {
+	@include text-colors( $inverse-text-color, $inverse-link-color, $inverse-link-color-hover );
+}
+
 @mixin default-colors {
-	@include inverse-colors( $default-text-color, $default-link-color, $default-link-color-hover );
+	@include text-colors;
 	text-shadow: none;
 }
 

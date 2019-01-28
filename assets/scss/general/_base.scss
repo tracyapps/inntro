@@ -23,7 +23,7 @@ body {
 	color: $default-text-color;
 	font-family: $body-font;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 100;
 	max-width: 100vw;
 	overflow-x: hidden;
 
@@ -53,11 +53,16 @@ body {
 
 a {
 	color: $default-link-color;
+	transition: all 300ms ease-in-out;
+	font-weight: 300;
+	text-decoration-line: underline;
+	text-decoration-color: rgba( $default-link-color, 0.6 );
 
 	&:hover,
 	&:focus,
 	&:active {
 		color: $default-link-color-hover;
+		text-decoration-color: rgba( $default-link-color, 0.1 );
 	}
 }
 
@@ -239,10 +244,12 @@ h6 {
 }
 .green-yellow {
 	@include green-yellow;
+	@include inverse-colors;
 }
 .blue-teal {
 	@include blue-teal;
 }
 .orange-yellow {
 	@include orange-yellow;
+	@include inverse-colors;
 }

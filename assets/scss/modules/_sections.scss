@@ -32,24 +32,30 @@
 
 	&:not(.none) {
 		.hero {
-
-			filter: opacity( 0.35 );
-			background-blend-mode: overlay;
-			background-color: rgba( $dark, 0.3 );
+			.hero-image-container {
+				filter: opacity( 0.35 );
+				background-blend-mode: overlay;
+				background-color: rgba( $dark, 0.3 );
+			}
 		}
 	}
 	.hero {
-		min-height: 95vh;
-		background-size: cover;
-		background-position: 50% 20%;
 		position: relative;
-		padding-top: 22vh;
 
+		.hero-image-container {
+			min-height: 95vh;
+			background-size: cover;
+			background-position: 50% 20%;
+			position: relative;
+		}
 
 		.hero-text-container {
+			position: absolute;
+			z-index: 99;
+			top: 26vh;
 			font-size: 1.5em;
 			padding: 3rem;
-			margin: 0 1vw 0 50vw;
+			margin: 0 2vw 0 50vw;
 			overflow: hidden;
 
 			p:first-child {
