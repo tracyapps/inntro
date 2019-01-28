@@ -133,6 +133,20 @@ button {
 		box-shadow: none;
 	}
 
+	&.important {
+		@include button-primary;
+		@include gradient-animate( $red, $orange, $yellow, $yellow-alt);
+		background-size: 200% 200%;
+		background-position: 0% 50%;
+		transition-duration: 350ms;
+
+		&:hover {
+			@include gradient-animate( $red, $orange, $yellow, $yellow-alt);
+			background-size: 200% 200%;
+			background-position: 100% 50%;
+		}
+	}
+
 }
 
 .learn-more-button {
@@ -235,12 +249,15 @@ h6 {
 
 .purple-blue {
 	@include purple-blue;
+	@include default-colors;
 }
 .purple-pink {
 	@include purple-pink;
+	@include default-colors;
 }
 .red-yellow {
 	@include red-yellow;
+	@include default-colors;
 }
 .green-yellow {
 	@include green-yellow;
@@ -248,6 +265,7 @@ h6 {
 }
 .blue-teal {
 	@include blue-teal;
+	@include inverse-colors;
 }
 .orange-yellow {
 	@include orange-yellow;

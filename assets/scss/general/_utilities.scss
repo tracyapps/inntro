@@ -63,6 +63,7 @@
 	$link: $default-link-color,
 	$link-hover: $default-link-color-hover ) {
 	color: $text;
+	text-shadow: 1px 1px 0 rgba( invert( $text ), 0.43 );
 	a,
 	a:visited {
 		color: $link;
@@ -75,12 +76,6 @@
 		&:active {
 			color: $link-hover;
 			text-decoration-color: rgba( $link, 0 );
-		}
-
-		&.button {
-			&:hover {
-				color: $text !important;
-			}
 		}
 	}
 
@@ -96,7 +91,6 @@
 
 @mixin default-colors {
 	@include text-colors;
-	text-shadow: none;
 }
 
 // svg drop shadow

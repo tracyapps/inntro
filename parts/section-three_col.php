@@ -41,7 +41,7 @@ $columns = 3;
 			<div class="column-footer">
 				<?php if( $show_the_button == true ) : ?>
 				<p class="learn-more-button">
-					<a class="button" href="<?php the_sub_field( 'column_' . $col . '_link' ); ?>">
+					<a class="button primary" href="<?php the_sub_field( 'column_' . $col . '_link' ); ?>">
 						<?php the_sub_field( 'column_' . $col . '_button_label' ); ?>
 					</a>
 				</p>
