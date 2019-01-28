@@ -136,8 +136,8 @@ blockquote {
     fill: #2a263a !important; }
 
 .button,
-input[type="submit"],
-button {
+a.button,
+input[type="submit"] {
   background: transparent;
   padding: 0.95rem 2.82rem;
   text-align: center;
@@ -154,34 +154,34 @@ button {
   transition: all 200ms ease-in-out;
   box-shadow: none; }
   .button:hover, .button:focus, .button:visited:hover,
+  a.button:hover,
+  a.button:focus,
+  a.button:visited:hover,
   input[type="submit"]:hover,
   input[type="submit"]:focus,
-  input[type="submit"]:visited:hover,
-  button:hover,
-  button:focus,
-  button:visited:hover {
+  input[type="submit"]:visited:hover {
     background: transparent;
     color: #FFFA04 !important; }
   .button.full,
-  input[type="submit"].full,
-  button.full {
+  a.button.full,
+  input[type="submit"].full {
     display: block;
     text-align: center; }
   .button.primary,
-  input[type="submit"].primary,
-  button.primary {
-    background: rgba(0, 200, 255, 0.9);
+  a.button.primary,
+  input[type="submit"].primary {
+    background: transparent;
     padding: 0.95rem 2.82rem;
     text-align: center;
     text-decoration: none;
-    color: #fff !important;
+    color: #101010 !important;
     border-radius: 3px;
     display: inline-block;
-    border-top: 1px solid #33d3ff;
-    border-left: 1px solid #33d3ff;
-    border-bottom: 1px solid #00a0cc;
-    border-right: 1px solid #00a0cc;
-    text-shadow: 1px 1px 0 rgba(255, 55, 0, 0.23);
+    border-top: 1px solid rgba(26, 26, 26, 0);
+    border-left: 1px solid rgba(26, 26, 26, 0);
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.23);
     box-shadow: 0 1px 3px rgba(42, 38, 58, 0.5);
     transition: all 200ms ease-in-out;
     background: #20FFA3;
@@ -190,24 +190,25 @@ button {
     background-position: 0% 50%;
     transition-duration: 350ms; }
     .button.primary:hover, .button.primary:focus, .button.primary:visited:hover,
+    a.button.primary:hover,
+    a.button.primary:focus,
+    a.button.primary:visited:hover,
     input[type="submit"].primary:hover,
     input[type="submit"].primary:focus,
-    input[type="submit"].primary:visited:hover,
-    button.primary:hover,
-    button.primary:focus,
-    button.primary:visited:hover {
-      background: #F9CE34;
+    input[type="submit"].primary:visited:hover {
+      background: transparent;
       color: #fff !important; }
     .button.primary:hover,
-    input[type="submit"].primary:hover,
-    button.primary:hover {
+    a.button.primary:hover,
+    input[type="submit"].primary:hover {
       background: #20FFA3;
       background: linear-gradient(135deg, #20FFA3 0%, #00c8ff 45%, #38BBF9 50%, #6727cb 100%);
       background-size: 200% 200%;
-      background-position: 100% 50%; }
+      background-position: 100% 50%;
+      color: #fff; }
   .button.secondary,
-  input[type="submit"].secondary,
-  button.secondary {
+  a.button.secondary,
+  input[type="submit"].secondary {
     background: transparent;
     padding: 0.95rem 2.82rem;
     text-align: center;
@@ -224,17 +225,17 @@ button {
     transition: all 200ms ease-in-out;
     box-shadow: none; }
     .button.secondary:hover, .button.secondary:focus, .button.secondary:visited:hover,
+    a.button.secondary:hover,
+    a.button.secondary:focus,
+    a.button.secondary:visited:hover,
     input[type="submit"].secondary:hover,
     input[type="submit"].secondary:focus,
-    input[type="submit"].secondary:visited:hover,
-    button.secondary:hover,
-    button.secondary:focus,
-    button.secondary:visited:hover {
+    input[type="submit"].secondary:visited:hover {
       background: rgba(103, 39, 203, 0.52);
       color: #FFFA04 !important; }
   .button.important,
-  input[type="submit"].important,
-  button.important {
+  a.button.important,
+  input[type="submit"].important {
     background: rgba(0, 200, 255, 0.9);
     padding: 0.95rem 2.82rem;
     text-align: center;
@@ -255,21 +256,52 @@ button {
     background-position: 0% 50%;
     transition-duration: 350ms; }
     .button.important:hover, .button.important:focus, .button.important:visited:hover,
+    a.button.important:hover,
+    a.button.important:focus,
+    a.button.important:visited:hover,
     input[type="submit"].important:hover,
     input[type="submit"].important:focus,
-    input[type="submit"].important:visited:hover,
-    button.important:hover,
-    button.important:focus,
-    button.important:visited:hover {
+    input[type="submit"].important:visited:hover {
       background: #F9CE34;
       color: #fff !important; }
     .button.important:hover,
-    input[type="submit"].important:hover,
-    button.important:hover {
+    a.button.important:hover,
+    input[type="submit"].important:hover {
       background: #E73D11;
       background: linear-gradient(135deg, #E73D11 0%, #F3B61C 45%, #F9CE34 50%, #FFFA04 100%);
       background-size: 200% 200%;
       background-position: 100% 50%; }
+
+button {
+  background: transparent;
+  padding: 0.95rem 2.82rem;
+  text-align: center;
+  text-decoration: none;
+  color: #101010 !important;
+  border-radius: 3px;
+  display: inline-block;
+  border-top: 1px solid rgba(26, 26, 26, 0);
+  border-left: 1px solid rgba(26, 26, 26, 0);
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 3px rgba(42, 38, 58, 0.5);
+  transition: all 200ms ease-in-out;
+  background: #20FFA3;
+  background: linear-gradient(135deg, #20FFA3 0%, #00c8ff 45%, #38BBF9 50%, #6727cb 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  transition-duration: 350ms;
+  font-weight: 100;
+  font-size: 18px; }
+  button:hover, button:focus, button:visited:hover {
+    background: transparent;
+    color: #fff !important; }
+  button:hover {
+    background: #20FFA3;
+    background: linear-gradient(135deg, #20FFA3 0%, #00c8ff 45%, #38BBF9 50%, #6727cb 100%);
+    background-size: 200% 200%;
+    background-position: 100% 50%; }
 
 .learn-more-button {
   padding-bottom: 2rem; }
@@ -594,14 +626,16 @@ select,
 textarea {
   padding: 0.5rem 1rem;
   outline: none;
-  border: 1px solid rgba(242, 242, 242, 0.2);
+  border: 1px solid transparent;
+  border-bottom: 2px solid #0091B4;
   border-radius: 3px;
-  background: #2a263a;
+  background: transparent;
   font-size: 18px;
   font-family: "Noto Sans JP", sans-serif;
   margin-left: 1rem;
   box-shadow: none;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  transition: all 300ms ease-in-out; }
   input[type="email"]:hover,
   input[type="number"]:hover,
   input[type="password"]:hover,
@@ -616,7 +650,7 @@ textarea {
   input[type="datetime-local"]:hover,
   select:hover,
   textarea:hover {
-    border: 1px solid #6727cb; }
+    border-bottom: 2px solid #f7f400; }
   input[type="email"]:focus,
   input[type="number"]:focus,
   input[type="password"]:focus,
@@ -632,12 +666,41 @@ textarea {
   select:focus,
   textarea:focus {
     outline: none;
-    border: 1px dotted #CB1F8F;
-    background: #2a263a; }
+    border-bottom: 2px solid #fff; }
 
 input[type="submit"] {
   font-size: 18px;
   font-family: "Noto Sans JP", sans-serif; }
+
+fieldset {
+  border: none; }
+  fieldset .frm_form_field {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    display: block; }
+    fieldset .frm_form_field input {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0; }
+      fieldset .frm_form_field input:focus + label, fieldset .frm_form_field input.has-value + label {
+        font-size: 80%;
+        transform: translateY(-270%); }
+    fieldset .frm_form_field label {
+      position: absolute;
+      left: 1rem;
+      transform: translateY(-120%);
+      transition: all 200ms ease-in-out; }
+    fieldset .frm_form_field .frm_error {
+      display: block;
+      background: #E73D11;
+      color: #fff;
+      font-weight: 300;
+      font-size: 80%;
+      padding: 3px 1rem;
+      border-radius: 3px;
+      margin-top: 2px; }
 
 .frm_form_field.frm_left_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_left_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_left_container textarea, .frm_form_field.frm_left_container .wp-editor-wrap, .frm_form_field.frm_left_container .frm_opt_container, .frm_form_field.frm_left_container .frm_dropzone, .frm_form_field.frm_left_container .frm-g-recaptcha, .frm_form_field.frm_left_container .g-recaptcha, .frm_form_field.frm_left_container .chosen-container, .frm_form_field.frm_left_container .frm_combo_inputs_container, .frm_form_field.frm_right_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_right_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_right_container textarea, .frm_form_field.frm_right_container .wp-editor-wrap, .frm_form_field.frm_right_container .frm_opt_container, .frm_form_field.frm_right_container .frm_dropzone, .frm_form_field.frm_right_container .frm-g-recaptcha, .frm_form_field.frm_right_container .g-recaptcha, .frm_form_field.frm_right_container .chosen-container, .frm_form_field.frm_right_container .frm_combo_inputs_container {
   max-width: 100%; }

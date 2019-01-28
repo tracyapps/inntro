@@ -103,8 +103,8 @@ blockquote {
 }
 
 .button,
-input[type="submit"],
-button {
+a.button,
+input[type="submit"] {
 	@include button-primary(transparent, $default-link-color, transparent, $default-link-color-hover, $button-transition-speed, $default-button-padding);
 	box-shadow: none;
 
@@ -114,16 +114,18 @@ button {
 	}
 
 	&.primary {
-		@include button-primary;
+		@include button-primary(transparent, $black, transparent, $white, $button-transition-speed, $default-button-padding);
 		@include gradient-animate;
 		background-size: 200% 200%;
 		background-position: 0% 50%;
 		transition-duration: 350ms;
 
+
 		&:hover {
 			@include gradient-animate;
 			background-size: 200% 200%;
 			background-position: 100% 50%;
+			color: $white;
 		}
 	}
 
@@ -146,6 +148,22 @@ button {
 		}
 	}
 
+}
+
+button {
+	@include button-primary(transparent, $black, transparent, $white, $button-transition-speed, $default-button-padding);
+	@include gradient-animate;
+	background-size: 200% 200%;
+	background-position: 0% 50%;
+	transition-duration: 350ms;
+	font-weight: 100;
+	font-size: $base-font-size;
+
+	&:hover {
+		@include gradient-animate;
+		background-size: 200% 200%;
+		background-position: 100% 50%;
+	}
 }
 
 .learn-more-button {
