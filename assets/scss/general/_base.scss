@@ -128,8 +128,7 @@ button {
 	}
 
 	&.secondary {
-		@include button-primary( transparent, $yellow, rgba( $purple, 0.52 ), $yellow-alt, $button-transition-speed, $default-button-padding);
-		font-size: 75%;
+		@include button-primary( transparent, $yellow-alt, rgba( $purple, 0.52 ), $yellow-alt, $button-transition-speed, $default-button-padding);
 		box-shadow: none;
 	}
 

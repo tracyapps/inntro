@@ -38,15 +38,13 @@ $columns = 3;
 			<div class="column-body">
 				<?php the_sub_field( 'column_' . $col . '_content' ); ?>
 			</div>
-			<div class="column-footer">
-				<?php if( $show_the_button == true ) : ?>
+			<div class="column-footer"><?php if( $show_the_button == true ) : ?>
 				<p class="learn-more-button">
 					<a class="button primary" href="<?php the_sub_field( 'column_' . $col . '_link' ); ?>">
 						<?php the_sub_field( 'column_' . $col . '_button_label' ); ?>
 					</a>
 				</p>
-				<?php endif; ?>
-			</div>
+			<?php endif; ?></div>
 
 		</div>
 

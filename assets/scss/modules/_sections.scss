@@ -169,6 +169,7 @@
  * Columns section
  */
 .type-three_col {
+	padding: 4rem 0;
 
 	.columns-wrapper {
 		display: flex;
@@ -176,7 +177,7 @@
 		align-items: stretch;
 		width: 90%;
 		margin: 0 auto;
-		padding: 0 0 6rem 0;
+		padding: 0 0 3rem 0;
 
 		@include phone-only {
 			display: block;
@@ -221,6 +222,10 @@
 				flex: 1;
 				flex-grow: 3;
 			}
+
+			.column-footer:empty {
+				min-height: 2.5rem;
+			}
 		}
 
 		// if $gutter-width variable_exists in vars, set the gutter between columns
@@ -249,6 +254,14 @@
 		}
 	}
 
+	+ .type-three_col {
+		margin-top: -4rem;
+		padding-top: 0;
+
+		.section-title {
+			padding-top: 9rem;
+		}
+	}
 }
 
 /**
