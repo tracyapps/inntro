@@ -118,15 +118,15 @@
 		flex: 1;
 
 		&.text-side {
-			background: $default-background-color;
-			@include default-colors;
-			text-shadow: none;
+			//background: $default-background-color;
+			//@include default-colors;
+			//text-shadow: none;
 
 			h2 {
 				line-height: 1.2;
 
 				a {
-					color: $default-text-color !important;
+					//color: $default-text-color !important;
 					text-decoration: none;
 				}
 			}
