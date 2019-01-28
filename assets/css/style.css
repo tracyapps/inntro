@@ -1000,7 +1000,7 @@ footer.site-footer {
       .text-image-grid-container > div.text-side .padding {
         max-width: 40ch;
         padding: 3rem;
-        margin: 3rem auto; }
+        margin: 6rem auto; }
     .featured-blog-post-container > div.image-side,
     .text-image-grid-container > div.image-side {
       background-size: cover;
