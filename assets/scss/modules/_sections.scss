@@ -7,7 +7,7 @@
 
 // alignment adjustments to account for angled heros, and hero sections at the very top
 .type-hero + .page-section:not(.type-hero) {
-	padding-top: 8vh;
+	padding-top: 3vh;
 }
 
 #main {
@@ -49,8 +49,8 @@
 }
 
 .type-hero {
-	margin-top: -8vh;
-	margin-bottom: -8vh;
+	margin-top: -9vh;
+	margin-bottom: -10vh;
 	-webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 8%, 100% 95%, 0 100%);
 
@@ -208,7 +208,7 @@
 			.padding {
 				max-width: 40ch;
 				padding: 6rem;
-				margin: 8vh auto;
+				margin: 11vh auto 12vh auto;
 			}
 		}
 		
