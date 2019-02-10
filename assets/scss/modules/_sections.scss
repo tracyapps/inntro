@@ -42,11 +42,26 @@
 	.hero {
 		position: relative;
 
-		.hero-image-container {
-			min-height: 55vh;
-			background-size: cover;
-			background-position: 50% 20%;
-			position: relative;
+		&.small {
+			.hero-image-container {
+				min-height: 55vh;
+				background-size: cover;
+				background-position: 50% 20%;
+				position: relative;
+			}
+		}
+
+		&.large {
+			.hero-image-container {
+				min-height: 95vh;
+				background-size: cover;
+				background-position: 50% 50%;
+				position: relative;
+			}
+			.hero-text-container {
+				top: 43vh;
+				font-size: 200%;
+			}
 		}
 
 		.hero-text-container {
@@ -55,28 +70,58 @@
 			top: 21vh;
 			font-size: 1.75em;
 			padding: 3rem;
-			margin: 0 50vw 0 2vw;
 			overflow: hidden;
 
 			p:first-child {
 				margin-top: 0;
 			}
 
-			@include tablet-down {
-				background: rgba( $default-background-color, 0.8 );
+		}
+
+		&.left_align {
+			.hero-text-container {
+				margin: 0 50vw 0 2vw;
+			}
+		}
+
+		&.right_align {
+			.hero-text-container {
+				margin: 0 2vw 0 50vw;
+			}
+		}
+		&.center_align {
+			.hero-text-container {
+				margin: 0 20vw;
 			}
 		}
 
 		@include phone-only {
-			min-height: 60vh;
+			//min-height: 60vh;
 			background-size: 200% auto;
 			background-repeat: no-repeat;
 
 			.hero-text-container {
 				margin: 30vh 0 0 0;
-				position: relative;
-				float: right;
 				padding: 0.5em;
+			}
+
+			&.center_align {
+				.hero-text-container {
+					margin: 0 5vw 0 5vw;
+					text-align: center;
+				}
+			}
+			&.right_align {
+				.hero-text-container {
+					margin: 0 5vw 0 5vw;
+					text-align: right;
+				}
+			}
+			&.left_align {
+				.hero-text-container {
+					margin: 0 5vw 0 5vw;
+					text-align: left;
+				}
 			}
 		}
 	}

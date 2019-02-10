@@ -966,34 +966,50 @@ footer.site-footer {
     background-color: rgba(42, 38, 58, 0.3); }
   .type-hero .hero {
     position: relative; }
-    .type-hero .hero .hero-image-container {
+    .type-hero .hero.small .hero-image-container {
       min-height: 55vh;
       background-size: cover;
       background-position: 50% 20%;
       position: relative; }
+    .type-hero .hero.large .hero-image-container {
+      min-height: 95vh;
+      background-size: cover;
+      background-position: 50% 50%;
+      position: relative; }
+    .type-hero .hero.large .hero-text-container {
+      top: 43vh;
+      font-size: 200%; }
     .type-hero .hero .hero-text-container {
       position: absolute;
       z-index: 99;
       top: 21vh;
       font-size: 1.75em;
       padding: 3rem;
-      margin: 0 50vw 0 2vw;
       overflow: hidden; }
       .type-hero .hero .hero-text-container p:first-child {
         margin-top: 0; }
-      @media (max-width: 900px) {
-        .type-hero .hero .hero-text-container {
-          background: rgba(42, 38, 58, 0.8); } }
+    .type-hero .hero.left_align .hero-text-container {
+      margin: 0 50vw 0 2vw; }
+    .type-hero .hero.right_align .hero-text-container {
+      margin: 0 2vw 0 50vw; }
+    .type-hero .hero.center_align .hero-text-container {
+      margin: 0 20vw; }
     @media (max-width: 600px) {
       .type-hero .hero {
-        min-height: 60vh;
         background-size: 200% auto;
         background-repeat: no-repeat; }
         .type-hero .hero .hero-text-container {
           margin: 30vh 0 0 0;
-          position: relative;
-          float: right;
-          padding: 0.5em; } }
+          padding: 0.5em; }
+        .type-hero .hero.center_align .hero-text-container {
+          margin: 0 5vw 0 5vw;
+          text-align: center; }
+        .type-hero .hero.right_align .hero-text-container {
+          margin: 0 5vw 0 5vw;
+          text-align: right; }
+        .type-hero .hero.left_align .hero-text-container {
+          margin: 0 5vw 0 5vw;
+          text-align: left; } }
 
 .featured-blog-post-container,
 .text-image-grid-container {

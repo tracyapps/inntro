@@ -7,7 +7,7 @@
 $image  = get_sub_field( 'hero_image' );
 ?>
 
-<div class="hero">
+<div class="hero <?php echo esc_html( get_sub_field( 'hero_height' ) ) . ' ' . esc_html( get_sub_field( 'text_alignment' ) ); ?>">
 
 	<div class="hero-image-container" data-image="<?php echo esc_attr( $image ); ?>" style="background-image: url('<?php echo esc_attr( $image ); ?>');">
 
