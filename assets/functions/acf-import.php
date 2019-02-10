@@ -13,6 +13,7 @@ $background_choices_available = array (
 	'green-yellow'	=> 'Green/yellow gradient',
 	'blue-teal'		=> 'Blue/teal gradient',
 	'orange-yellow'	=> 'Orange/yellow gradient',
+	'dark-overlay'	=> 'Dark gradient',
 );
 
 // settings on where the 'sections' are active throughout the site

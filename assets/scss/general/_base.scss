@@ -296,3 +296,8 @@ h6 {
 	@include inverse-colors;
 	padding-bottom: 3rem;
 }
+
+.dark-overlay {
+	@include dark-gradient;
+	@include default-colors;
+}
