@@ -267,24 +267,32 @@ h6 {
 .purple-blue {
 	@include purple-blue;
 	@include default-colors;
+	padding-bottom: 3rem;
 }
 .purple-pink {
 	@include purple-pink;
 	@include default-colors;
+	padding-bottom: 3rem;
 }
 .red-yellow {
 	@include red-yellow;
 	@include default-colors;
+	padding-bottom: 3rem;
 }
 .green-yellow {
 	@include green-yellow;
-	@include inverse-colors;
+	@include default-colors;
+	padding-bottom: 3rem;
 }
 .blue-teal {
 	@include blue-teal;
-	@include inverse-colors;
+	//@include default-colors;
+	@include text-colors( $white, $offwhite, $dark );
+	padding-bottom: 3rem;
+
 }
 .orange-yellow {
 	@include orange-yellow;
 	@include inverse-colors;
+	padding-bottom: 3rem;
 }

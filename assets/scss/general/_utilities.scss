@@ -165,7 +165,7 @@
 }
 
 @mixin red-yellow {
-	@include linear-gradient(135deg, $red 0%, $yellow 100%);
+	@include linear-gradient(135deg, $red 40%, $yellow 100%);
 }
 
 @mixin purple-pink {
@@ -173,11 +173,11 @@
 }
 
 @mixin green-yellow {
-	@include linear-gradient(135deg, $green 0%, $lime 100%);
+	@include linear-gradient(135deg, $green 30%, $lime 100%);
 }
 
 @mixin blue-teal {
-	@include linear-gradient(135deg, $blue 0%, $teal 100%);
+	@include linear-gradient(135deg, $blue 40%, $teal 100%);
 }
 
 @mixin orange-yellow {
