@@ -965,11 +965,11 @@ footer.site-footer {
 .type-hero + .page-section:not(.type-hero) {
   padding-top: 8vh; }
 
-#main ~ .type-hero {
+#main > section:first-of-type.type-hero {
   margin-top: 0;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%); }
-  #main ~ .type-hero h2.section-title {
+  #main > section:first-of-type.type-hero h2.section-title {
     margin-bottom: -40vh;
     margin-top: 33vh; }
 

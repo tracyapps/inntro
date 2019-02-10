@@ -10,13 +10,17 @@
 	padding-top: 8vh;
 }
 
-#main ~ .type-hero {
-	margin-top: 0;
-	clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+#main {
+	> section:first-of-type {
+		&.type-hero {
+			margin-top: 0;
+			clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
 
-	h2.section-title {
-		margin-bottom: -40vh;
-		margin-top: 33vh;
+			h2.section-title {
+				margin-bottom: -40vh;
+				margin-top: 33vh;
+			}
+		}
 	}
 }
 
