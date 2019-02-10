@@ -5,9 +5,19 @@
 	overflow: hidden;
 }
 
-// alignment adjustments to account for angled heros (etc)
+// alignment adjustments to account for angled heros, and hero sections at the very top
 .type-hero + .page-section:not(.type-hero) {
 	padding-top: 8vh;
+}
+
+#main ~ .type-hero {
+	margin-top: 0;
+	clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+
+	h2.section-title {
+		margin-bottom: -40vh;
+		margin-top: 33vh;
+	}
 }
 
 .section-title {
