@@ -970,8 +970,8 @@ footer.site-footer {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%); }
   #main > section:first-of-type.type-hero h2.section-title {
-    margin-bottom: -43vh;
-    margin-top: 36vh; }
+    margin-bottom: -19vh;
+    margin-top: 12vh; }
   #main > section:first-of-type.type-hero .hero-text-container {
     top: 17vh; }
 
