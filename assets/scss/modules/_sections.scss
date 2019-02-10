@@ -4,6 +4,12 @@
 	padding: 0;
 	overflow: hidden;
 }
+
+// alignment adjustments to account for angled heros (etc)
+.type-hero + .page-section:not(.type-hero) {
+	padding-top: 8vh;
+}
+
 .section-title {
 	margin-top: 0;
 	text-align: center;
@@ -25,8 +31,8 @@
 }
 
 .type-hero {
-	margin-top: -5vh;
-	margin-bottom: -5vh;
+	margin-top: -8vh;
+	margin-bottom: -8vh;
 	-webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 8%, 100% 95%, 0 100%);
 
@@ -184,7 +190,7 @@
 			.padding {
 				max-width: 40ch;
 				padding: 6rem;
-				margin: 6rem auto;
+				margin: 8vh auto;
 			}
 		}
 		
