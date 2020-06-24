@@ -1354,6 +1354,9 @@ footer.site-footer {
       .page-children-grid .child-page-box .child-page-link:hover {
         transform: scale(1.1); }
 
+#main > section.page-section {
+  padding-top: 10vh; }
+
 .home section.homepage-hero {
   min-height: 101vh;
   padding: 19vh 2vw 5vh 2vw;
