@@ -1354,7 +1354,7 @@ footer.site-footer {
       .page-children-grid .child-page-box .child-page-link:hover {
         transform: scale(1.1); }
 
-#main > section.page-section {
+#main > section.page-section:first-of-type {
   padding-top: 10vh; }
 
 .home section.homepage-hero {
